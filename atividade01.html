@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estoque de Informática</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Estoque de Informática</h1>
+
+    <table>
+        <caption>Estoque de Informática</caption>
+
+        <thead>
+            <tr>
+                <th colspan="2">Informações do produto</th>
+                <th colspan="2">Estoque</th>
+            </tr>
+            <tr>
+                <th>Categoria</th>
+                <th>Produto</th>
+                <th>Preço</th>
+                <th>Quantidade em estoque</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="2">Computadores</td>
+                <td>Notebook</td>
+                <td>R$ 3.500,00</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>Desktop</td>
+                <td>R$ 2.800,00</td>
+                <td class="baixo">3</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2">Periféricos</td>
+                <td>Teclado</td>
+                <td>R$ 120,00</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Mouse</td>
+                <td>R$ 60,00</td>
+                <td class="baixo">4</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2">Componentes</td>
+                <td>Memória RAM</td>
+                <td>R$ 250,00</td>
+                <td class="baixo">2</td>
+            </tr>
+            <tr>
+                <td>SSD 480 GB</td>
+                <td>R$ 300,00</td>
+                <td>6</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="3">Total de unidades em estoque</td>
+                <td>33</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
+2. style.css
+
+css
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 30px;
+}
+
+h1 {
+    text-align: center;
+    color: #222;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin-top: 20px;
+}
+
+caption {
+    font-size: 22px;
+    font-weight: bold;
+    padding: 12px;
+    color: #222;
+}
+
+th, td {
+    border: 1px solid #333;
+    padding: 12px;
+    text-align: center;
+}
+
+thead {
+    background-color: #1565c0;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #e8f0fe;
+}
+
+tfoot {
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+}
+
+.baixo {
+    background-color: #ffcdd2;
+    color: #b71c1c;
+    font-weight: bold;
+}
